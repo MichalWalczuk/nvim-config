@@ -29,7 +29,11 @@ require("mike.lazygit")
 - [x] LSP
 - [x] Treesitter
 - [x] Formatter
+- [ ] Folding (nvim-ufo)
+- [ ] Project manager
 - [ ] DAP Debugger
+- [ ] Gitsigns
+- [ ] Copilot
 
 ## Useful VIM tricks
 
