@@ -2,6 +2,7 @@ local wk = require("which-key")
 
 wk.register({
     ["<leader>"] = {
+        c = { "Close buffer" },
         f = {
             name = "Telescope",
             f = { "Find file" },

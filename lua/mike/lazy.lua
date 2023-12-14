@@ -14,6 +14,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
     {
+        'lukas-reineke/indent-blankline.nvim'
+    },
+    {
         'nmac427/guess-indent.nvim'
     },
     {
@@ -39,9 +42,9 @@ require('lazy').setup({
         'nvim-treesitter/nvim-treesitter'
     },
     {
-        'nvim-telescope/telescope.nvim', tag = '0.1.5',
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.5',
         dependencies = { 'nvim-lua/plenary.nvim' },
-
     },
     {
         'folke/which-key.nvim',

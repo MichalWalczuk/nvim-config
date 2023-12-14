@@ -9,3 +9,4 @@ vim.opt.cursorline = true
 vim.opt.number = true
 vim.opt.updatetime = 50
 vim.opt.signcolumn = "number"
+vim.opt.scrolloff = 6
