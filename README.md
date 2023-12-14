@@ -26,13 +26,12 @@ require("mike.lazygit")
 ### Todos: 
 - [x] Telescope
 - [x] Which-key
-- [ ] LSP
-- [ ] Buffer navigation
-- [ ] Treesitter
-- [ ] Formatter
+- [x] LSP
+- [x] Treesitter
+- [x] Formatter
 - [ ] DAP Debugger
 
-# Useful VIM tricks
+## Useful VIM tricks
 
 ### Marks:
 Marks are pretty useful. We can keep track of saved buffers and specific lines. Use case: press `mV` in current file, and close Vim. Next time you want to edit this file just press `'V'.
