@@ -13,6 +13,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+    { 'm4xshen/autoclose.nvim' },
+    {
+        'kevinhwang91/nvim-ufo',
+        dependencies = 'kevinhwang91/promise-async'
+    },
     {
         'lukas-reineke/indent-blankline.nvim'
     },
@@ -28,9 +33,7 @@ require('lazy').setup({
         lazy = false
     },
     {
-        'ellisonleao/gruvbox.nvim',
-        priority = 1000,
-        config = true,
+        'navarasu/onedark.nvim',
     },
     {
         'mbbill/undotree'
