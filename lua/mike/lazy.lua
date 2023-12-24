@@ -13,30 +13,45 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-    { 'm4xshen/autoclose.nvim' },
     {
-        'kevinhwang91/nvim-ufo',
+        "mfussenegger/nvim-dap"
+    },
+    {
+        'Raimondi/delimitMate',
+    },
+    {
+        "kylechui/nvim-surround", -- for surrounding tags, functions
+        version = "*",
+        event = "VeryLazy",
+        config = function()
+            require("nvim-surround").setup({
+            })
+        end
+    }, {
+    'akinsho/toggleterm.nvim',
+    version = '*',
+    config = true
+},
+    { 'tpope/vim-vinegar' },       -- for file explorer netrw
+    { 'lewis6991/gitsigns.nvim' }, -- for git stuff
+    {
+        'kevinhwang91/nvim-ufo',   -- for folding
         dependencies = 'kevinhwang91/promise-async'
     },
     {
-        'lukas-reineke/indent-blankline.nvim'
+        'lukas-reineke/indent-blankline.nvim' -- for visual indent lines
     },
     {
-        'nmac427/guess-indent.nvim'
+        'nmac427/guess-indent.nvim' -- to set specific tabwidth for file
     },
     {
-        'neoclide/coc.nvim', branch = 'release'
-    },
-    {
-        'numToStr/Comment.nvim',
+        'numToStr/Comment.nvim', -- for comment shortcuts
         opts = {},
         lazy = false
     },
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
     {
-        'navarasu/onedark.nvim',
-    },
-    {
-        'mbbill/undotree'
+        'mbbill/undotree' -- visual representation of local changes (tree)
     },
     {
         'nvim-treesitter/playground'
